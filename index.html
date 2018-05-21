@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sorter</title>
+    <link href='main.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1>Lets go!</h1>
+      <div class="fileContainer">
+        <input onchange="formChange()" id="directoryInput" type="file" webkitdirectory class="inputfile" />
+        <label for="directoryInput">CHOOSE A FILE</label>
+      </div>
+
+
+      <input id="numbersString" placeholder="ENTER NUMBERS" type="text">
+      <!--<button id="submitButton" class="btn btn-sm animated-button victoria-one" onClick = "submit()">SUBMIT</button>-->
+      <a href="#"  id="submitButton" class="btn btn-sm animated-button victoria-one" onClick = "submit()">SUBMIT</a>
+    </div>
+    <script src="sorter.js">
+    </script>
+    <script>
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
